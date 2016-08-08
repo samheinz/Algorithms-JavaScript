@@ -2,6 +2,7 @@ function bubbleSort(arr) {
 	if(arr.length <= 1) return arr
 
 	var switched;
+
 	do {
 		switched = false;
 		for(var i = 0; i < arr.length - 1; i += 1) {
@@ -13,4 +14,6 @@ function bubbleSort(arr) {
 			}
 		}
 	} while(switched);
+
+	return arr;
 } 
