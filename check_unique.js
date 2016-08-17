@@ -4,11 +4,13 @@ function checkUnique(str){
 	var arr = [];
 
 	for(var i = 0; i < str.length; i++){
-		var arr_value = str[i];
-		if(arr[arr_value]) {
+		var val = str[i];
+		if(arr[val]) {
 			return false;
 		}
-		arr[arr_value] = true;
+		else {
+		  arr[val] = true;
+	    }
 	}
 	return true;
 }
