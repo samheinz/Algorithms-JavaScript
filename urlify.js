@@ -1,4 +1,4 @@
 function urlify(str) {
-	var urlString = str.replace(" ", "%20");
+	var urlString = str.trim().replace(" ", "%20");
 	return urlString;
 }
