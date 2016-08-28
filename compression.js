@@ -10,5 +10,9 @@ function compressString(str){
 			repeat_count = 0
 		}
 	}
-	return compressed;
+	if(compressed.length < str.length){
+		return compressed;
+	} else {
+		return str;
+	}
 }
