@@ -16,4 +16,18 @@ function bubbleSort(arr) {
 	} while(switched);
 
 	return arr;
-} 
+}
+
+function bubbleSort(arr) {
+    var length = arr.length;
+    for (var i = length - 1; i >= 0; i--) {
+        for (var j = length - i; j > 0; j--) {
+            if (arr[j] < arr[j - 1]) {
+                var temp = arr[j];
+                arr[j] = arr[j - 1];
+                arr[j - 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
